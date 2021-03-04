@@ -5,7 +5,7 @@ import { MEMBERS_QUERY } from "../graphql/queries.gql";
 
 const Home = ({ members }) => {
   const title = "Time Unbox";
-  const description = "Site com todos os integrantes do time da unbox :)";
+  const description = "[todo - descrição] :)";
 
   return (
     <>
