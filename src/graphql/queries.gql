@@ -1,0 +1,12 @@
+query MEMBERS_QUERY {
+  members {
+    id
+    name
+    slug
+    role
+    description
+    image {
+      url
+    }
+  }
+}

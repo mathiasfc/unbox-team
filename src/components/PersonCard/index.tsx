@@ -10,8 +10,8 @@ function PersonCard({ person }: { person: any }) {
     <s.PersonItem>
       <s.PersonHeader>
         <s.PersonPicture>
-          <s.Image
-            src={person.picture}
+          <Image
+            src={person?.image?.url}
             alt={`Foto de ${person.name}`}
             width="100"
             height="100"
@@ -19,16 +19,16 @@ function PersonCard({ person }: { person: any }) {
         </s.PersonPicture>
 
         <s.PersonInfo>
-          <s.PersonName>{person.name}</s.PersonName>
-          <s.PersonJob>{person.job}</s.PersonJob>
+          <s.PersonName>{person?.name}</s.PersonName>
+          <s.PersonJob>{person?.role}</s.PersonJob>
         </s.PersonInfo>
 
-        <s.PersonIcon src={person.icon} alt={`Ícone de ${person.name}`} />
+        <s.PersonIcon src="/icons/unbox.png" alt={`Ícone de ${person.name}`} />
       </s.PersonHeader>
 
       <s.PersonDescription
         dangerouslySetInnerHTML={{
-          __html: personDescription.replace(/\n/g, "<br />")
+          __html: personDescription.replace(/\n/g, "<br />"),
         }}
       ></s.PersonDescription>
     </s.PersonItem>

@@ -1,14 +1,11 @@
-import { people } from "helpers/people";
-
 import PersonCard from "components/PersonCard";
-
 import * as s from "./style";
 
-export default function HomeTemplate() {
+export default function HomeTemplate({ members }) {
   return (
     <s.PeopleList>
-      {people.map((person, personKey) => {
-        return <PersonCard person={person} key={`unbox-people-${personKey}`} />;
+      {members.map((member) => {
+        return <PersonCard person={member} key={member?.id} />;
       })}
     </s.PeopleList>
   );
