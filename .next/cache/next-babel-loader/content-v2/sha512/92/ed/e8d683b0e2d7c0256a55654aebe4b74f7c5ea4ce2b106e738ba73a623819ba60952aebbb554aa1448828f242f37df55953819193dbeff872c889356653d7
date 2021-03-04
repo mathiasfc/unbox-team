@@ -1,1 +1,0 @@
-{"ast":null,"code":"import { jsx as _jsx } from \"react/jsx-runtime\";\nimport HomeTemplate from \"templates/Home\";\nexport default function Home() {\n  return /*#__PURE__*/_jsx(HomeTemplate, {});\n}","map":null,"metadata":{},"sourceType":"module"}
