@@ -10,6 +10,7 @@ const Home = ({ members }) => {
   return (
     <>
       <NextSeo
+        noindex
         title={title}
         description={description}
         canonical="https://unbox-team.vercel.app/"
