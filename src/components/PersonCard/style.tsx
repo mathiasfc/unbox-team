@@ -15,6 +15,10 @@ export const PersonItem = styled.li`
   &:nth-child(2n + 1) {
     background-color: #f78be8;
   }
+
+  &:nth-child(4n + 3) {
+    grid-column: 2;
+  }
 `;
 
 export const PersonHeader = styled.div`
